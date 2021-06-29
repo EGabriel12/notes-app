@@ -52,8 +52,12 @@ class _HomePageState extends State<HomePage> {
   }
 
   Widget addButtonWidget() {
-    return FloatingActionButton(
+    return ElevatedButton(
       child: Icon(Icons.add),
+      style: ElevatedButton.styleFrom(
+        shape: CircleBorder(),
+        padding: EdgeInsets.all(20),
+      ),
       onPressed: () async {
         var description = await Navigator.pushNamed(context, "/create-note");
         if (description != null) {
