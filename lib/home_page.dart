@@ -17,6 +17,7 @@ class _HomePageState extends State<HomePage> {
       ),
       body: notesListWidget(),
       floatingActionButton: addButtonWidget(),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 
